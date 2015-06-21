@@ -1,5 +1,0 @@
-C:\DevSource\Tamu\GeoInnovation\Routing.Core\src\Main\obj\Release\Tamu.GeoInnovation.Routing.Core.dll
-C:\DevSource\Tamu\GeoInnovation\Routing.Core\src\Main\obj\Release\Tamu.GeoInnovation.Routing.Core.pdb
-C:\DevSource\Tamu\GeoInnovation\Routing.Core\src\Main\obj\Release\Routing.Core.Build.csprojResolveAssemblyReference.cache
-C:\DevSource\Tamu\GeoInnovation\Routing.Core\build\1.0.0\AnyCPU\release\Tamu.GeoInnovation.Routing.Core.dll
-C:\DevSource\Tamu\GeoInnovation\Routing.Core\build\1.0.0\AnyCPU\release\Tamu.GeoInnovation.Routing.Core.pdb
