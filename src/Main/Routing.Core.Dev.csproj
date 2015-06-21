@@ -70,18 +70,6 @@
     </Reference>
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
-    <Reference Include="Tamu.GeoInnovation.Common.Core.Geo.Geometries">
-      <HintPath>..\..\..\Common.Core.Geo.Geometries\build\1.0.0\AnyCPU\release\Tamu.GeoInnovation.Common.Core.Geo.Geometries.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="Tamu.GeoInnovation.Common.Core.Geo.JSON">
-      <HintPath>..\..\..\Common.Core.Geo.JSON\build\1.0.0\AnyCPU\release\Tamu.GeoInnovation.Common.Core.Geo.JSON.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="Tamu.GeoInnovation.Common.Core.Kml">
-      <HintPath>..\..\..\Common.Core.Kml\build\1.0.0\AnyCPU\release\Tamu.GeoInnovation.Common.Core.Kml.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
   </ItemGroup>
   <ItemGroup>
     <None Include="Algorithms\AStar.cs" />
@@ -120,6 +108,23 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="LICENSE.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Common.Core.Geo.Geometries\Src\Main\Common.Core.Geo.Geometries.Dev.csproj">
+      <Project>{E8164C90-2753-46F3-937A-653039318563}</Project>
+      <Name>Common.Core.Geo.Geometries.Dev</Name>
+      <Private>False</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Common.Core.Geo.JSON\Src\Main\Common.Core.Geo.JSON.Dev.csproj">
+      <Project>{94ED88DE-7D16-4D95-AD96-9F12C10F9617}</Project>
+      <Name>Common.Core.Geo.JSON.Dev</Name>
+      <Private>False</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Common.Core.Kml\Src\Main\Common.Core.Kml.Dev.csproj">
+      <Project>{6EF62A72-2725-49D9-94E8-1339D01403FC}</Project>
+      <Name>Common.Core.Kml.Dev</Name>
+      <Private>False</Private>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
