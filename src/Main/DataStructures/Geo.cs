@@ -1,7 +1,7 @@
-﻿using System;
+﻿using Microsoft.SqlServer.Types;
+using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
-using Microsoft.SqlServer.Types;
 using USC.GISResearchLab.Common.Core.KML;
 using USC.GISResearchLab.Common.Core.Utils.JSON;
 using USC.GISResearchLab.Common.Geometries;

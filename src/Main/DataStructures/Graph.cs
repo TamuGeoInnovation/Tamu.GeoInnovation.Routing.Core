@@ -1,6 +1,6 @@
-﻿using System;
+﻿using Microsoft.SqlServer.Types;
+using System;
 using System.Collections.Generic;
-using Microsoft.SqlServer.Types;
 using System.Data.SqlClient;
 
 namespace USC.GISResearchLab.Routing.DataStructures

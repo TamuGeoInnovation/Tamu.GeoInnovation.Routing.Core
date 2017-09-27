@@ -1,5 +1,5 @@
-﻿using System;
-using Microsoft.SqlServer.Types;
+﻿using Microsoft.SqlServer.Types;
+using System;
 
 namespace USC.GISResearchLab.Routing.DataStructures
 {
