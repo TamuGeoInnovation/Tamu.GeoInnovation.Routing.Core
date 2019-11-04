@@ -27,7 +27,7 @@ namespace USC.GISResearchLab.Routing.DataStructures
 
                 for (int i = 0; i < ShapePoints.Length; i++)
                 {
-                    s = shape.STPointN(i + 1); 
+                    s = shape.STPointN(i + 1);
                     ShapePoints[i] = new Point(s.Long.Value, s.Lat.Value);
                 }
             }
@@ -45,13 +45,13 @@ namespace USC.GISResearchLab.Routing.DataStructures
 
     public interface IEdge<V>
     {
-         V VertexFrom { get; set; } // Vertex one
-         V VertexTo { get; set; } // Vertex two
+        V VertexFrom { get; set; } // Vertex one
+        V VertexTo { get; set; } // Vertex two
     }
 
-	public class Edge: IEquatable<Edge>, IEdge<Vertex>
-	{
-		public int DBID;
+    public class Edge : IEquatable<Edge>, IEdge<Vertex>
+    {
+        public int DBID;
         private RoadProperties properties;
         public Vertex VertexFrom { get; set; } // Vertex one
         public Vertex VertexTo { get; set; } // Vertex two
@@ -66,31 +66,31 @@ namespace USC.GISResearchLab.Routing.DataStructures
         }
         public double Len
         {
-            get { return  properties.Len ; }
+            get { return properties.Len; }
         }
         public char Direction
         {
             get { return properties.Direction; }
         }
-		
-		// Contructor
+
+        // Contructor
         public Edge(int DID, Vertex vertexFrom, Vertex vertexTo, RoadProperties prop)
-		{
-			VertexFrom = vertexFrom;
-			VertexTo = vertexTo;
-			DBID = DID;
+        {
+            VertexFrom = vertexFrom;
+            VertexTo = vertexTo;
+            DBID = DID;
             properties = prop != null ? prop : new RoadProperties();
-		}
+        }
 
-		public override string ToString()
-		{
-			return this.DBID.ToString();
-		}
+        public override string ToString()
+        {
+            return this.DBID.ToString();
+        }
 
-		public bool Equals(Edge other)
-		{
-			return (this.DBID == other.DBID);
-		}
+        public bool Equals(Edge other)
+        {
+            return (this.DBID == other.DBID);
+        }
 
         internal void ResetCapacityUsed()
         {

@@ -36,7 +36,7 @@ namespace USC.GISResearchLab.Routing.DataStructures
     {
         Dictionary<IV, V> vertices;
         Dictionary<IE, E> edges;
-        Dictionary<IV, List<TurnRestriction<V,E>>> turnRestrictions;
+        Dictionary<IV, List<TurnRestriction<V, E>>> turnRestrictions;
 
         public bool Reverse;
         public string ConnectionString;
@@ -69,7 +69,7 @@ namespace USC.GISResearchLab.Routing.DataStructures
             if (edgeFrom.VertexTo.Equals(intersect) && edgeTo.VertexFrom.Equals(intersect))
             {
                 if (!turnRestrictions.ContainsKey(VertixUID)) turnRestrictions.Add(VertixUID, new List<TurnRestriction<V, E>>());
-                turnRestrictions[VertixUID].Add(new TurnRestriction<V, E>(intersect, edgeFrom, edgeTo));                
+                turnRestrictions[VertixUID].Add(new TurnRestriction<V, E>(intersect, edgeFrom, edgeTo));
             }
             else throw new ArgumentException("Invalid set of edges and vertex.");
         }

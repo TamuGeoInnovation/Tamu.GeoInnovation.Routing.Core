@@ -3,8 +3,8 @@ using System;
 
 namespace USC.GISResearchLab.Routing.DataStructures
 {
-	public class Point
-	{
+    public class Point
+    {
         protected int y, x;
         private static double PointResolution = 1000000.0;
         public static double XLen = 0.011979;
@@ -16,33 +16,33 @@ namespace USC.GISResearchLab.Routing.DataStructures
         public static int xMin = Convert.ToInt32(XMin * PointResolution);
         public static int yMin = Convert.ToInt32(YMin * PointResolution);
 
-		public double Y
-		{
-			get { return y / PointResolution; }
-			set { y = Convert.ToInt32(value * PointResolution); }
-		}
+        public double Y
+        {
+            get { return y / PointResolution; }
+            set { y = Convert.ToInt32(value * PointResolution); }
+        }
 
-		public double X
-		{
-			get { return x / PointResolution; }
-			set { x = Convert.ToInt32(value * PointResolution); }
-		}
+        public double X
+        {
+            get { return x / PointResolution; }
+            set { x = Convert.ToInt32(value * PointResolution); }
+        }
 
-		public Point()
-			: this(0.0, 0.0)
-		{ }
+        public Point()
+            : this(0.0, 0.0)
+        { }
 
-		public Point(double _X, double _Y)
-		{
-			X = _X;
-			Y = _Y;
-		}
+        public Point(double _X, double _Y)
+        {
+            X = _X;
+            Y = _Y;
+        }
 
         public bool Equals(Point p)
         {
             return p.x == x && p.y == y;
         }
-	}
+    }
 
     public class SnapPoint : Point
     {
@@ -53,7 +53,7 @@ namespace USC.GISResearchLab.Routing.DataStructures
 
         public SnapPoint() : this(0.0, 0.0, null, 0.0) { }
 
-        public SnapPoint(double _X, double _Y, Edge associatedEdge, double position)            
+        public SnapPoint(double _X, double _Y, Edge associatedEdge, double position)
         {
             AssociatedEdge = associatedEdge;
             PositionAlongEdge = position;

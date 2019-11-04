@@ -1,12 +1,12 @@
-﻿using System;
+﻿using Microsoft.SqlServer.Types;
+using SQLSpatialTools;
+using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
 using System.Data.SqlTypes;
-using Microsoft.SqlServer.Types;
-using SQLSpatialTools;
-using USC.GISResearchLab.Routing.DataStructures;
 using USC.GISResearchLab.Routing.Algorithms;
+using USC.GISResearchLab.Routing.DataStructures;
 
 namespace USC.GISResearchLab.Routing.Core
 {
